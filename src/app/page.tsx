@@ -8,7 +8,6 @@ import { useEffect, useState } from "react";
 export default function Home() {
   const router = useRouter();
 
-
   return (
     <Container component="main" maxWidth="xs">
       <Box
@@ -20,9 +19,6 @@ export default function Home() {
         }}
       >
         <Typography variant="h5">LogIn</Typography>
-
-        {/* <Box>Nome: {name}</Box> */}
-
         <Box
           // component="form"
           sx={{ marginTop: 1 }}

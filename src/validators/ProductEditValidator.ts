@@ -7,7 +7,7 @@ export const ProductEditValidater = () => {
     value: Yup.number()
       .min(0.01, "Campo deve ter pelo nenos ${min}")
       .required(),
-    weight: Yup.number().min(0.01),
-    flavor: Yup.string().max(50),
+    weight: Yup.number().min(0.01, "Campo deve ter pelo nenos ${min}"),
+    flavor: Yup.string().max(50, "Campo deve ter no maximo ${max}"),
   });
 };
